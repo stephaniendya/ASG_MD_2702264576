@@ -54,20 +54,20 @@ def show_user_input():
     age = st.slider("Usia", 5, 100, 25)
     height = st.slider("Tinggi (m)", 1.2, 2.2, 1.7)
     weight = st.slider("Berat (kg)", 30, 200, 70)
-    FCVC = st.slider("Frekuensi Konsumsi Sayur (0-3)", 0.0, 3.0, 2.0)
-    NCP = st.slider("Jumlah Makan dalam Sehari", 1.0, 5.0, 3.0)
+    FCVC = st.slider("Seberapa sering mengonsumsi sayur (0-3)", 0.0, 3.0, 2.0)
+    NCP = st.slider("Berapa kali makan dalam sehari?", 1.0, 5.0, 3.0)
     CH2O = st.slider("Asupan Air (Liter/Hari)", 0.5, 5.0, 2.0)
     FAF = st.slider("Frekuensi Aktivitas Fisik (0-3)", 0.0, 3.0, 1.0)
     TUE = st.slider("Waktu di Depan Layar (0-2)", 0.0, 2.0, 1.0)
 
     gender = st.selectbox("Jenis Kelamin", ["Male", "Female"])
-    family_history = st.selectbox("Riwayat Obesitas dalam Keluarga", ["yes", "no"])
-    FAVC = st.selectbox("Sering Konsumsi Makanan Cepat Saji?", ["yes", "no"])
+    family_history = st.selectbox("Adakah riwayat obesitas dalam keluarga?", ["yes", "no"])
+    FAVC = st.selectbox("Apakah sering megonsumsi fast food?", ["yes", "no"])
     CAEC = st.selectbox("Frekuensi Konsumsi Makanan di Antara Makan Besar", ["no", "Sometimes", "Frequently", "Always"])
-    SMOKE = st.selectbox("Apakah Anda Merokok?", ["yes", "no"])
-    SCC = st.selectbox("Mengontrol Kalori yang Dikonsumsi?", ["yes", "no"])
-    CALC = st.selectbox("Frekuensi Konsumsi Alkohol", ["no", "Sometimes", "Frequently", "Always"])
-    MTRANS = st.selectbox("Moda Transportasi", ["Public_Transportation", "Automobile", "Walking", "Motorbike", "Bike"])
+    SMOKE = st.selectbox("Apakah Anda merokok?", ["yes", "no"])
+    SCC = st.selectbox("Apakah Anda mengontrol kalori yang dikonsumsi?", ["yes", "no"])
+    CALC = st.selectbox("Seberapa seringkah Anda mengonsumsi alkohol?", ["no", "Sometimes", "Frequently", "Always"])
+    MTRANS = st.selectbox("Mode transportasi apa yang sering digunakan?", ["Public_Transportation", "Automobile", "Walking", "Motorbike", "Bike"])
 
     binary_map = {"Male": 1, "Female": 0, "yes": 1, "no": 0}
     label_map = {"no": 0, "Sometimes": 1, "Frequently": 2, "Always": 3}
